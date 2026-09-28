@@ -40,10 +40,36 @@ Headline2: listing things
 
 ### Unordered list of my favourite subjects in no particular order ###
 
-* Physics
+* no space1
 * Maths
 * Computer Science
 
- * Physics
+ * space1
  * Maths
  * Computer Science
+
+
+ Headline2: quotes
+ -----------------
+
+> "According to all known laws of aviation, there is no way that a bee should be able to fly"
+     - Barry the bee
+
+> "Why the hell are people using me for random quotes"
+>"when in doubt, make sure to quick save"
+>"In near-death situations, throw a potion of invisibility."
+> "The enemy cannot steal your strategy if you forgot it first"
+- Sun Tzu, The Art of War
+
+!(https://i.imgflip.com/a4d7ir.png)
+
+source: [link](https://i.imgflip.com/a4d7ir.png)
+
+
+**How to crash python IDEs:**
+*idk*
+~~~python
+for i in range(10000) {
+    print(i)
+}
+~~~

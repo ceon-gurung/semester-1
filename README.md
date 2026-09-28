@@ -59,7 +59,15 @@ Headline2: listing things
 > "when in doubt, make sure to quick save"
 > "In near-death situations, throw a potion of invisibility."
 > "The enemy cannot steal your strategy if you forgot it first"
+
 - Sun Tzu, The Art of War
+
+
+> Block quotes are
+> written like so.
+>
+> They can span multiple paragraphs,
+> if you like.
 
 !(https://i.imgflip.com/a4d7ir.png)
 

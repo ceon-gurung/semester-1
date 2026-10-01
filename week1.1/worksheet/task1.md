@@ -16,8 +16,8 @@ You can complete this task on the worksheet pdf if you prefer.
 |     cd ..                   | moves to the parent directory of the current directory |
 |     cd -                    | moves to the child directory of the current directory |
 |     mkdir directory_name    | makes a directory (or folder) with the name "directory_name" in the current directory|
-|     touch filename          | creates filename (no type) |
-|     git status              | tells you about this repo's branch position and relation to the main branch. Also states new files |
+|     touch filename          | creates file called "filename" (no type) in current directory |
+|     git status              | tells you about this repo's branch position and relation to the main branch. Also states new files and modified files |
 |     git add -A              | adds everything on the codespace to a commit |
 |     git commit -m ""        | creates a commit with the message "" (nothing) |
 |     git push                | replaces the synced repo on github with the current repo |

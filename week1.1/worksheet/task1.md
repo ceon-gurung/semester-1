@@ -11,15 +11,15 @@ You can complete this task on the worksheet pdf if you prefer.
 |     Command                 |     Explanation    |
 |-----------------------------|--------------------|
 |     pwd                     | shows the current location of the terminal |
-|     ls                      | |
-|     cd directory_name       | |
-|     cd ..                   | |
-|     cd -                    | |
-|     mkdir directory_name    | |
-|     touch filename          | |
-|     git status              | |
-|     git add -A              | |
-|     git commit -m ""        | |
-|     git push                | |
-|     git pull                | |
+|     ls                      | lists all items in the current directory |
+|     cd directory_name       | moves to the named directory |
+|     cd ..                   | moves to the parent directory of the current directory |
+|     cd -                    | moves to the child directory of the current directory |
+|     mkdir directory_name    | makes a directory (or folder) with the name "directory_name" in the current directory|
+|     touch filename          | creates filename (no type) |
+|     git status              | tells you about this repo's branch position and relation to the main branch. Also states new files |
+|     git add -A              | adds everything on the codespace to a commit |
+|     git commit -m ""        | creates a commit with the message "" (nothing) |
+|     git push                | replaces the synced repo on github with the current repo |
+|     git pull                | replaces the current repo with a main branch repo on github |
 

@@ -2,6 +2,7 @@
 Utility functions for Worksheet 1.2.
 """
 
+import sys
 
 def read_numbers():
     """
@@ -12,5 +13,7 @@ def read_numbers():
     input by the user.
     """
     line = input("Enter some numbers, separated by spaces: ")
+    if line == "":
+        sys.exit("Error: no numbers provided")
     numbers = [float(item) for item in line.split()]
     return numbers

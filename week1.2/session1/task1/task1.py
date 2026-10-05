@@ -16,5 +16,12 @@ shopping.remove("eggs")
 print(shopping)
 
 # Replace bananas with grapes
+shopping.insert((shopping.index("bananas")), "grapes")
+shopping.remove("bananas")
+
+print(shopping)
 
 # Add yoghurt, just after milk
+shopping.insert((shopping.index("milk"))+1, "yoghurt")
+
+print(shopping)

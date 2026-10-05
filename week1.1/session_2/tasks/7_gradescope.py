@@ -1,16 +1,27 @@
-# To test that you can successfully download a file and upload it to gradescope
+"""
+Portfolio Task - Week 1
+By submitting this code you are declaring that all work in this file, other than any provided template code, was written and developed by you independently.
+Name: 
+"""
 
-# You are going to write a very simple program:
+name = input("What is your name? ")
+print(f"Welcome to LeedsBank's savings calculator {name}!")
 
-# Ask a user to enter two numbers (one per input)
+# Ask the user to input an amount they want to save every month - this should be an integer.
+# Validate that they have entered an integer.
+exit = 0
+try:
+    inputSave = int(input("Input how much you want to save "))
+except:
+    print("Invalid amount")
+    exit = 1
 
-# multiply those numbers together
-
-# print out the result
-
-# There is an extra point available for validating that they entered numbers!
-# Add to your code so that if they entered something other than an integer it prints
-# 'That is not a number' and exits.
-
-# Download your file, and upload it to the 'Week 1 Session 2 - Practice Upload' task on Minerva.
-# You will get some feedback - ensure you are passing the tests!
+# Calculate the total amount of money they will have saved by the end of the year (amount per month multiplied by 12).
+# print this out for the user with a suitable message.
+if exit == 0:
+    yearSave = inputSave * 12
+    print(yearSave)
+# Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
+# print this out in the format £X.XX (to two decimal places).
+    yearSave *= 1.008
+    print(f"£{yearSave:.2f}")

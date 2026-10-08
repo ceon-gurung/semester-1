@@ -27,6 +27,6 @@ print("Mean = " + str(sum(number)/len(number)))
 
 number.sort()
 if (len(number)%2 == 0):
-    print("Median = " + str(((number[len(number)//2]+(number[len(number)//2]-1)))/2))
+    print("Median = " + str(((number[len(number)//2] + (number[(len(number)//2)-1]) ))/2))
 else:
     print("Median = " + str(number[len(number)//2]))

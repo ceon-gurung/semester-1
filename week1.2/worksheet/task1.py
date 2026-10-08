@@ -16,5 +16,4 @@ elif (gradeNumber >= 40) and (gradeNumber < 70):
 elif (gradeNumber >= 70) and (gradeNumber < 101):
     print(str(gradeNumber) + " is a Distinction")
 else:
-    print("Error: Grade must be an integer between 0 and 100")
-    sys.exit("Error!")
+    sys.exit("Error: Grade must be an integer between 0 and 100")

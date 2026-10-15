@@ -4,9 +4,16 @@
 # (i.e., POST /login with the response 401) in a log file and print these out in a
 # human-readable format.
 
-
+filename = "/workspaces/semester-1/week1.3/session2/task2/2_log_data/site.txt"
 # open and read the file
-
+try:
+    with open(filename, 'r') as f:
+        contents = f.readlines()
+        for line in contents:
+            values = line.split(',')
+            
+except:
+    pass
 # find all failed login attempts (POST /login with the response 401)
 # and print these out in a human-readable format:
 # IP address 192.168.1.17 failed to login at 10:42:12 on 2024-10-20

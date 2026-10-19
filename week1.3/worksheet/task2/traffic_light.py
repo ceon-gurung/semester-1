@@ -15,4 +15,29 @@ print(f"Time {systime:03} State {state}")
 
 # Simulate the traffic light system up to time=maxtime in 1-second steps
 
+for i in range(maxtime+1):
+    if state == "red":
+        for j in range(4):
+            print(f"Time {systime:03} State {state}")
+            systime += 1
+        state = "amber"
+    
+    if state == "red_amber":
+        for j in range(3):
+            print(f"Time {systime:03} State {state}")
+            systime += 1
+        state = "green"
+    
+    if state == "green":
+        for j in range(5):
+            print(f"Time {systime:03} State {state}")
+            systime += 1
+        state = "amber"
+    
+    if state == "amber":
+        for j in range(3):
+            print(f"Time {systime:03} State {state}")
+            systime += 1
+        state = "red"
+
 # At the end of each step you should output the time and state using the statement on line 14

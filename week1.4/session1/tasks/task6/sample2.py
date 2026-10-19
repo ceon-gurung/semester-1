@@ -16,7 +16,9 @@ print(add_two_numbers(num1=3, num2=4))
 print(add_two_numbers(3, num2=4))
 
 # Why does the next line work?
+#   Because the numbers are converted to a float before being
 print(add_two_numbers("3", "4"))
 
 # What happens if you try this? Uncomment the code to find out.
+#   Error
 # print(add_two_numbers("three", "four"))

@@ -16,7 +16,18 @@ def isBond(intList):
     # meaning you need to delete pass to write your code.
     # Nothing happens when pass is executed.
 
-    pass     # delete pass to write your code
+    numbers = []
+    
+    for num in intList:
+        if (len(numbers) == 0 or len(numbers) == 1) and num == 0:
+            numbers.append(num)
+        elif len(numbers) == 2 and num == 7:
+            numbers.append(num)
+            return True
+        else:
+            pass
+
+    return False
 
 # Check if the following lines of code produce the correct output
 print(isBond([1, 2, 4, 0, 0, 7, 5]))   # True

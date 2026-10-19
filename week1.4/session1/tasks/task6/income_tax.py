@@ -5,7 +5,6 @@
 # details in the docstring. You can create additional functions
 # to be called from within income_tax_calculator
 
-
 def income_tax_calculator(annual_income):
     """
     This function calculates the tax amount for a given taxable annual income
@@ -34,6 +33,24 @@ def income_tax_calculator(annual_income):
         e.g round(tax, 1) 0.0 if annual_income is not a positive integer.
     """
 
+    totalTax = 0
+    taxed_income = annual_income
+
+    if annual_income <= 12570: # lowest tax bracket
+        return 0.0
+    else: # if above previous tax bracket
+
+        if annual_income > 125140: # if in highest tax bracket
+            totalTax += (taxed_income - 125140) * 0.45
+            totalTax += (125140 - 50270) * 0.4
+            totalTax += (50270 - 12570) * 0.2
+        elif annual_income > 50720: # if in 2nd highest tax bracket
+            totalTax += (taxed_income - 50270) * 0.4
+            totalTax += (50270 - 12570) * 0.2
+        else: # if in 3rd highest tax bracket
+            totalTax += (taxed_income - 12570) * 0.2
+
+    return totalTax
 
 # Check if the following lines produce the correct output
 print(income_tax_calculator(12000))     # 0.0

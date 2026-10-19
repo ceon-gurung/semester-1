@@ -4,8 +4,11 @@
 # Inspect the code in the function
 # Your task is to write a corresponding docstring
 # - what the function does 
+#   - The function counts the number of uppercase and lowercase letters
 # - what is the input data and type
+#   - string input
 # - what is the return value and type
+#   - 2 integers in a tuple
 
 
 # function implementation
@@ -35,4 +38,6 @@ print(mystery_func("ABC"))
 # to see if you are right?
 
 # print(mystery_func("X"))
+#   (1, 0)
 # print(mystery_func("[2, 3]"))
+#   (0, 0)

@@ -11,22 +11,18 @@ integer = 0
 unique = False
 
 for i in range (1,L+1):
-    unique = False
-    integer = sequence[i-1] - i
+    unique = True
+    integer = sequence[i-1]
 
     # Find duplicates
     for num in sequence: # go through every number in sequence
-        if (integer != num) and not (unique):    # if new number is not in list
-            unique = True                        # then show that it's unique and quit
-            print(unique)
+        if ((integer - i) == num) and (unique):    # if new number is not in list
+            unique = False                        # then show that it's unique and quit
     
-    if (integer > 0) and unique:                                # ak-1 – k > 0
-        sequence.append(integer)
+    if ((integer - i) > 0) and unique:                                # ak-1 – k > 0
+        sequence.append(integer - i)
     else:
-        sequence.append(sequence[i-1] + i)
-
-    if unique:
-        print("unique: " + str(sequence[len(sequence)-1]))
+        sequence.append(integer + i)
 
 # You may wish to use further output for testing purposes while you develop your code
 

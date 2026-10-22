@@ -20,6 +20,11 @@ def divide_and_remainder(dividend, divisor):
     # complete your code here
 
     # Returning both quotient and remainder
+
+    quotient = dividend // divisor
+    remainder = (((dividend / divisor) - quotient) * divisor)
+    remainder = int(f"{remainder:.0f}")
+
     return quotient, remainder
 
 # Check if correct output is produced

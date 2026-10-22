@@ -1,6 +1,8 @@
 # Week 4, Session 2: Task 2
-
+print()
 def most_frequent_string(votes):
+    if len(votes) == 0:
+            return (None, None)
     """
     This function identifies the string that appears most frequently
     (highest count) in the votes argument and returns it along with the count
@@ -16,6 +18,30 @@ def most_frequent_string(votes):
         and int is the count of its occurences
         - None, None: if votes is empty.
     """
+    items = []
+
+    new = True
+    for voteItem in votes:
+        new = True
+        for i in range(len(items)):
+            if items[i][0] == voteItem:                # if a vote entry exists
+                items[i][1] += 1
+                new = False
+
+        if new == True:                         # if a vote entry doesn't exist, create vote entry
+            items.append([voteItem, 1])         # voteItem, 1 vote (list, because tuples don't support item assignment)
+
+    # convert list of lists into list of tuples
+    items2 = []
+    for list in items:
+        items2.append((list[0], list[1]))
+
+    favorite_voteItem = ("None", 0)
+    for voteItem in items2:                          # find most voted item
+        if voteItem[1] > favorite_voteItem[1]:
+            favorite_voteItem = voteItem
+
+    return favorite_voteItem
 
     # Your task is to complete the body of the function based on the details in the docstring.
     # Hint 1: You can complete this task with for loops or comprehensions 

@@ -3,8 +3,12 @@
 # Given incomplete recursive function digits_sum with a docstring,
 # your task is to complete the function based on the description
 
-
+total = 0
 def digits_sum(number):
+    if len(str(number)) == 0:
+        print("returning total: " + str(total))
+        print("number: " + str(number))
+        return total
     """
     This recursive function calculates the sum of digits of a given positive
     integer. For example, sum of digits for 987 = 9 + 8 + 7 = 24.
@@ -19,9 +23,13 @@ def digits_sum(number):
     """
     # complete your code here
     # base case
-
     # recursive case
+    print("add: " + str(int(str(number)[0])))
+    total += int(str(number)[0])
 
+    newstr = str(number)[:0] + str(number)[1:]            # number, but without the first character
+
+    return digits_sum(newstr)
 
 # check if correct output is produced
 print(digits_sum(987))  # Output: 24

@@ -9,3 +9,5 @@ def greeting(name='John'):
 greeting()
 
 # write a second test by passing a name to the function
+
+greeting("bob")

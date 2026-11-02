@@ -73,3 +73,11 @@ class Circle:
         return f"radius={self.radius}, centre={self.centre}"
 
     # Implement your __contains__() method here
+    def __contains__(self, item):
+        return item in self
+
+    def getCentre(self):
+        return self.centre
+
+    def getRadius(self):
+        return self.radius

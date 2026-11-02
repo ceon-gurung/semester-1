@@ -16,6 +16,10 @@ class Point:
         """
         Creates a Point, given x & y coordinates.
         """
+        if not isinstance(x, (int, float)):
+            raise TypeError("x must be a number")
+        if not isinstance(y, (int, float)):
+            raise TypeError("y must be a number")
         self.x = x
         self.y = y
 
@@ -32,6 +36,8 @@ class Point:
         return math.hypot(self.x - p.x, self.y - p.y)
 
     # Implement a __str__() method here
+    def __str__(self):
+        return f"({self.x},{self.y})"
 
 
 class Circle:
@@ -47,6 +53,7 @@ class Circle:
         but should be provided as a Point object. If they are omitted, the
         circle will be centred at the origin.
         """
+        
         self.radius = radius
         self.centre = centre
 
@@ -63,3 +70,5 @@ class Circle:
         return 2.0 * math.pi * self.radius
 
     # Implement a __str__() method here
+    def __str__(self):
+        return f"({self.radius},{self.centre})"

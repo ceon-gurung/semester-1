@@ -32,3 +32,4 @@ class Point:
         Returns distance of this Point from another Point.
         """
         return math.hypot(self.x - p.x, self.y - p.y)
+

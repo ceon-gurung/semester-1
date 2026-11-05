@@ -147,8 +147,8 @@ class Image:
         print(self.max_value, file=imgfile)
 
     def _write_pixels(self, imgfile):
-        for row in range(self.height):
-            start = row * self.width
-            for value in self.pixels[start:start + self.width]:
+        for row in range(self.height): # using row, increments through the height
+            start = row * self.width # current row number * total number of columns
+            for value in self.pixels[start:start + self.width]: # iterates through an image's pixels 
                 print(f"{value:4d}", end="", file=imgfile)
             print(file=imgfile)

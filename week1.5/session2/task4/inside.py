@@ -13,6 +13,9 @@ b = Point(0,0)
 ca = Point(10, 25)
 
 def inside(point, circle):
+    '''
+    Check if a point is inside a circle
+    '''
     if (point.distance_to(circle.getCentre())) < circle.getRadius():
         return "The point is inside the cirlce"
     else:

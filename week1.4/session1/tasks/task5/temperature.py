@@ -12,9 +12,10 @@
 # print the temperature in Fahrenheit if the temperature from the user
 # is within the range, otherwise print "The temperature is out of range."
 
-
-
 def valid_temperature(temperature):
+    '''
+    Checks if the temperature parameter is within the correct range
+    '''
     if temperature >= -100 and temperature <= 100:
         return True
     else:
@@ -22,6 +23,9 @@ def valid_temperature(temperature):
 
 
 def celsius_to_fahrenheit(celsius):
+    '''
+    Converts a value to celsius into its equivalent value in fahrenheit
+    '''
     fahrenheit = (celsius * 9/5) + 32
     return fahrenheit
 

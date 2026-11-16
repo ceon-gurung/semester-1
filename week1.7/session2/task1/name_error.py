@@ -4,7 +4,9 @@
 
 expenses = [10, 20, 30]
 
+total = 0
+
 for amount in expenses:
-    total = total + amount  
+    total = total + amount              # total is created in the for loop, so it doesn't exist outside the for loop
 
 print(total)

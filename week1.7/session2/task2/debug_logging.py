@@ -16,11 +16,12 @@ def calculate_average(scores):
     total_assignments = len(scores)
     
     # add debug logging here
-    
-    average = total_score // total_assignments
-    
+    average = total_score / total_assignments                              # In the log, the operations were correct,
+    logger.debug(f"{average} = {total_score} // {total_assignments}")       # but in the program, the wrong one was chosen
+
     # add a debug logging here
-    
+    logger.debug(f"round({average},2) = {round(average)}")
+
     return round(average,2)
 
 print(calculate_average([85, 90, 88]))

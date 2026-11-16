@@ -5,6 +5,9 @@
 
 
 def power(x, n):
+    '''
+    Multiplies it by itself, and calls itself until the power of n decrements to 0
+    '''
     # complete your code here
     # base case
     if n == 1:

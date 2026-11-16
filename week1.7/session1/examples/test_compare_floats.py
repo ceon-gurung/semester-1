@@ -6,3 +6,7 @@ def test_floats_approx():
 def test_floats_equals():
     # this test will fail
     assert (0.1 + 0.2) == 0.3
+
+
+test_floats_approx()
+test_floats_equals()

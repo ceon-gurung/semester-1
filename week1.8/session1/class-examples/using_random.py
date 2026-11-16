@@ -17,7 +17,7 @@ print(nums)
 
 print("\nChoosing from a list of 1000 integers:")
 
-nums = list(range(1000))
+nums = list(range(11))
 
 one_random = random.choice(nums)
 print("1 value:", one_random)

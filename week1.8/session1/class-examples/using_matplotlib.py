@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # setting up our dataframe again.
-vegetable_prices = pd.read_csv("nepal_veg.csv")
+vegetable_prices = pd.read_csv("week1.8/session1/class-examples/nepal_veg.csv")
 vegetable_prices['Date'] = pd.to_datetime(vegetable_prices['Date'])
 
 

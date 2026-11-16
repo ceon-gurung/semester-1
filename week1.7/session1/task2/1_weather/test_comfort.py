@@ -6,12 +6,21 @@
 # Then write a test_ok() function that tests the other equivalence class
 
 from weather import comfort_level
+import unittest
 
 def test_cold():
-    assert comfort_level(    ) == "COLD"
-    assert comfort_level(    ) == "COLD"
+    '''
+    Test if comfort_level returns "COLD"
+    '''
+    assert comfort_level(10) == "COLD"
+    assert comfort_level(15) == "COLD"
 
 def test_hot():
-    assert comfort_level(    ) == "HOT"
-    assert comfort_level(    ) == "HOT"
+    '''
+    Test if comfort_level returns "HOT"
+    '''
+    assert comfort_level(30) == "HOT"
+    assert comfort_level(25.1) == "HOT"
     
+test_cold()
+test_hot()

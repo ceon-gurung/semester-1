@@ -14,6 +14,10 @@
 # function implementation
 
 def mystery_func(string):
+    '''
+    Counts the numbers if uppercase and lowercase characters.
+    Returns it as a tuple
+    '''
     upper = 0
     lower = 0
 

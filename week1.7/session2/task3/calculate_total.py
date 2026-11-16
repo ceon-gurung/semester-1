@@ -11,3 +11,11 @@ tax_percentage = 0.05
 
 final_amount = calculate_total(item_price, tax_percentage)
 print(f"Final Amount: {final_amount}")
+
+# python -m pdb week1.7/session2/task3/calculate_total.py
+# b x: breakpoint at line number x
+# c: continue program until breakpoint
+# n: next line only
+# p: print
+# cl: clear breakpoint
+# q: quit

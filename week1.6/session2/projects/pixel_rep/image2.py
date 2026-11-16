@@ -1,9 +1,15 @@
 class Image:
     def initialiseImage(width, height, value=0, max=255):
+        '''
+        Create new pgm image, with the same format as the images in the "images" folder
+        '''
         newImage = [["P2"], [str(width) + " " + str(height)], [max], [[0] * width] * height]
         return newImage
 
     def copyImage(self, imageFileName):
+        '''
+        Copy another pgm image file
+        '''
         with open(imageFileName, 'r') as f:
             contents = f.readlines()
 

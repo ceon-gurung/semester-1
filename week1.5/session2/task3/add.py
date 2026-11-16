@@ -5,9 +5,15 @@
 
 class Money:
     def __init__(self, amount):
+        '''
+        Set this object's amount property
+        '''
         self.amount = amount
 
     def __add__(self, other):
+        '''
+        Add together this object's amount property and another object's money property
+        '''
         return self.amount + other.amount
 
 a = Money(10)

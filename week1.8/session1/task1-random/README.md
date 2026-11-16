@@ -14,6 +14,10 @@
 4. Finally, add a comment to the file explaining what you think is
    happening here.
 
+The pseudorandom number generator generates numbers based on another number.
+Usually, this number is the previously generated number.
+Here, seed is set to 10, causing the generated numbers to be the same each time.
+
 ## `random_numbers.py`
 
 In this file, write a program that

@@ -7,6 +7,9 @@
 
 
 def format_data(day, month, year, separator):
+    '''
+    Concatenates the first 3 parameters, with the separater in between each of them
+    '''
     # complete your code here
     formatted_date = str(day) + separator + str(month) + separator + str(year)
     return formatted_date

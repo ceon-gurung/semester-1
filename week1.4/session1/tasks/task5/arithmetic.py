@@ -6,18 +6,31 @@
 
 
 def addition(num1, num2):
+    '''
+    Returns the value when 2 values are added
+    '''
     return num1 + num2
 
 
 def subtraction(num1, num2):
+    '''
+    Returns the value when 2 values are subtracted
+    '''
     return num1 - num2
 
 
 def multiplication(num1, num2):
+    '''
+    Returns the value when 2 values are multiplied
+    '''
     return num1 * num2
 
 
 def division(num1, num2):
+    '''
+    Returns the value when 2 values are divided.
+    Returns a string if attempting to divide by 0
+    '''
     if num2 == 0:
         return "Error: cannot divide by zero"
     else:
@@ -25,6 +38,10 @@ def division(num1, num2):
 
 
 def run_program():
+    '''
+    Asks the user for 2 numbers and one of the 4 operators.
+    Evaluates and returns the value
+    '''
 
     # Ask user for two numbers
     num1 = float(input("Enter the first number: "))

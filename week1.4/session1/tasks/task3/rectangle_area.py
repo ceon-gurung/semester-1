@@ -2,6 +2,9 @@
 # function implementation
 
 def rectangle_area(height, width):  # define suitable input data
+    '''
+    Returns the height and width of a given rectangle
+    '''
     # ...               # implement the function
     return height * width              # return an appropriate value
 

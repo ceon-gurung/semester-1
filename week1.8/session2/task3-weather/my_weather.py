@@ -3,7 +3,7 @@ import httpx
 import pandas as pd
 import matplotlib.pyplot as plt
 
-api_key="U6KXJTZC2E8VGH39PD7UMG4BZ"   # your API key
+api_key="FCB3E9HRVHQGZ7Y6DMRMUMYP9"   # your API key
 
 city="Leeds"     # city location
 country="UK"     # country location
@@ -22,30 +22,33 @@ response = httpx.get(url)
 # status code (should be checked)
 print(response.status_code)
 
-# json data
-data = response.json()
+if response.status_code == 200:
+    # json data
+    data = response.json()
 
-# raw data output
-print(data)
+    # raw data output
+    print(data)
 
-# extract the temperature data as lists from the JSON dictionary
-temp_data = data['days']
+    # extract the temperature data as lists from the JSON dictionary
+    temp_data = data['days']
 
-print(temp_data)
+    print(temp_data)
 
-# use pandas to convert data to  dataframe
+    # use pandas to convert data to dataframe
 
-df = pd.DataFrame(temp_data)
+    df = pd.DataFrame(temp_data)
 
-# using matplotlib plot the 3 data sets: (tempmin,temp,tempmax) as line graphs
+    # using matplotlib plot the 3 data sets: (tempmin,temp,tempmax) as line graphs
 
-df.plot()
+    df.plot()
 
-plt.show()
+    plt.show()
 
-# annotate the graph with axis labels
+    # annotate the graph with axis labels
 
-# note that temperature is in Farenheit (F)
-# convert to Celcius before plotting 
+    # note that temperature is in Farenheit (F)
+    # convert to Celcius before plotting 
 
-# using the documentation explore other data, eg. rainfall  
+    # using the documentation explore other data, eg. rainfall  
+else:
+    print("status code is not 200")
